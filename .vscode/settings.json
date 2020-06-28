@@ -1,0 +1,34 @@
+{
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Assigned To Me",
+      "query": "is:open assignee:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    }
+  ],
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "default"
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    }
+  ],
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 20000,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "bounded",
+  "git.defaultCloneDirectory": "",
+  "githubIssues.ignoreCompletionTrigger": ["python", ".json"],
+  "githubIssues.ignoreMilestones": [".json"]
+}
